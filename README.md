@@ -17,7 +17,7 @@ export default const app = () => {
 		setTimeout(initResolve, 2000);
 
 		initPromise.then(() => {
-			console.log('Promise');
+			console.log('test promise');
 		});
 
 	}, []);
