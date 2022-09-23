@@ -10,17 +10,17 @@ import { usePromise } from './usePromise';
 
 export default const app = () => {
 
-	const [initPromise, initResolve, initReject] = usePromise();
+  const [initPromise, initResolve, initReject] = usePromise();
 
-	useEffect(() => {
+  useEffect(() => {
 
-		setTimeout(initResolve, 2000);
+    setTimeout(initResolve, 2000);
 
-		initPromise.then(() => {
-			console.log('Promise');
-		});
+    initPromise.then(() => {
+      console.log('Promise');
+    });
 
-	}, []);
+  }, []);
 
 }
 ```
